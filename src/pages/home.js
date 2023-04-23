@@ -72,7 +72,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="flex items-start justify-between w-[100%] gap-2 flex-wrap">
-                        <Link to='/' className="border-[1px] hover:border-[var(--green)] ease-in-out duration-300 rounded-lg w-[49%] py-2 px-4">
+                        <Link to='/' className="border-[1px] hover:border-[var(--green)] ease-in-out duration-300 rounded-lg w-[49%] py-2 px-4 h-[90px]">
                             <div className="h-[100%] w-[100%] flex flex-col gap-2 lg:gap-2 justify-between">
                                 <div className="flex flex-col gap-0">
                                     <h2 className="font-bold text-2xl lg:text-6xl text-[var(--red)]">28</h2>
@@ -80,7 +80,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
-                        <Link to='/' className="border-[1px] hover:border-[var(--green)] ease-in-out duration-300 rounded-lg w-[49%] py-2 px-4">
+                        <Link to='/' className="border-[1px] hover:border-[var(--green)] ease-in-out duration-300 rounded-lg w-[49%] py-2 px-4 h-[90px]">
                             <div className="h-[100%] w-[100%] flex flex-col gap-2 lg:gap-2 justify-between">
                                 <div className="flex flex-col gap-0">
                                     <h2 className="font-bold text-2xl lg:text-6xl text-[var(--green)]">25</h2>
