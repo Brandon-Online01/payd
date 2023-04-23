@@ -79,7 +79,7 @@ const Login = () => {
                         <div className='w-[90%] md:w-[90%] lg:w-[85%] mx-auto p-4 rounded-lg flex flex-col gap-4 lg:bg-white lg:bg-opacity-20 lg:backdrop-blur-md lg:drop-shadow-lg'>
                             <div className='text-center'>
                                 <h4 className='font-bold text-4xl flex items-center gap-4 w-[100%] justify-center'>
-                                    Welcome !
+                                    Welcome!
                                     <img src={hand} alt='' loading='lazy' className='w-[50px] rotate-[-45deg]' onClick={e => setIsOpen(!isOpen)} />
                                 </h4>
                                 <p>Please sign in with your credentials</p>

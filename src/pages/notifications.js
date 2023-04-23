@@ -8,7 +8,7 @@ const Notifications = () => {
                 <div className="flex flex-col gap-4 h-auto">
                     <div className="flex items-start justify-between w-[100%] flex-wrap gap-2">
                         <Link to='/' className="shine w-[100%] md:w-[49%] lg:w-[24%] rounded-md py-14 px-2 flex flex-col items-start">
-                            <p></p>
+                            <p>Notifications</p>
                         </Link>
                         <Link to='/' className="shine w-[100%] md:w-[49%] lg:w-[24%] rounded-md py-14 px-2 flex flex-col items-start">
                             <p></p>

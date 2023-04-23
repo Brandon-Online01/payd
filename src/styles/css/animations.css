@@ -27,3 +27,16 @@
         background-position-x: -200%;
     }
 }
+
+
+.refresher {
+    background: linear-gradient(120deg, var(--gray) 8%, var(--yellow-shine) 18%, var(--gray) 33%);
+    background-size: 200% 100%;
+    animation: 2xs shine linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}
