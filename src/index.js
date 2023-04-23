@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //styling
 import './styles/css/theme.css';
 import './styles/css/animations.css';
+import './styles/css/override.css';
 
 //main app
 import App from './App';

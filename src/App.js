@@ -7,6 +7,7 @@ import Notifications from "./pages/notifications";
 import Support from "./pages/support";
 import Profile from "./pages/profile";
 import Settings from "./pages/settings";
+import Login from "./pages/login";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/support" element={<Support />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );
