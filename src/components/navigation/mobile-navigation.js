@@ -43,7 +43,7 @@ const MobileNavigation = () => {
                 </div>
                 {
                     isOpen && (
-                        <div className="w-[100%] min-h-[75vh] overflow-scroll h-[100%] pt-8 pb-6 px-4 rounded-md flex flex-col items-start justify-between bg-[var(--green)] popin absolute top-[4rem] z-[9]">
+                        <div className="w-[100%] min-h-[88vh] overflow-scroll h-[100%] pt-8 pb-6 px-4 rounded-md flex flex-col items-start justify-between bg-[var(--green)] popin absolute top-[4rem] z-[9]">
                             <div className="flex flex-col gap-6 justify-between w-[100%]">
                                 <div className="flex flex-col items-start gap-6 text-[var(--white)] flex-wrap w-[100%]">
                                     <Link to='/' className='flex justify-start items-center gap-2'>

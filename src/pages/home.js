@@ -16,7 +16,7 @@ const Home = () => {
                         <Link to='/' className="border-[1px] hover:border-[var(--green)] ease-in-out duration-300 w-[48%] lg:w-[24%] rounded-md h-[150px] p-4 flex flex-col items-start gap-2">
                             <div className="h-[100%] w-[100%] flex flex-col gap-2 lg:gap-2 justify-between">
                                 <div className="flex flex-col gap-0">
-                                    <h2 className="font-bold text-2xl lg:text-6xl text-[var(--yellow)]">4k</h2>
+                                    <h2 className="font-bold text-2xl lg:text-6xl">4k</h2>
                                     <p className="text-sm mt-[-0.5rem]">Active users this month</p>
                                 </div>
                                 <p className="hidden md:block text-sm">Click here</p>
@@ -25,7 +25,7 @@ const Home = () => {
                         <Link to='/' className="border-[1px] hover:border-[var(--green)] ease-in-out duration-300 w-[48%] lg:w-[24%] rounded-md h-[150px] p-4 flex flex-col items-start gap-2">
                             <div className="h-[100%] w-[100%] flex flex-col gap-2 lg:gap-2 justify-between">
                                 <div className="flex flex-col gap-0">
-                                    <h2 className="font-bold text-2xl lg:text-6xl text-[var(--green)]">R49k</h2>
+                                    <h2 className="font-bold text-2xl lg:text-6xl">R49k</h2>
                                     <p className="text-sm mt-[-0.5rem]">Total monthly earnings</p>
                                 </div>
                                 <p className="hidden md:block text-sm">Click here</p>
@@ -34,7 +34,7 @@ const Home = () => {
                         <Link to='/' className="border-[1px] hover:border-[var(--green)] ease-in-out duration-300 w-[48%] lg:w-[24%] rounded-md h-[150px] p-4 flex flex-col items-start gap-2">
                             <div className="h-[100%] w-[100%] flex flex-col justify-between gap-2 lg:gap-2">
                                 <div className="flex flex-col gap-0">
-                                    <h2 className="font-bold text-2xl lg:text-6xl text-[var(--red)]">R10K</h2>
+                                    <h2 className="font-bold text-2xl lg:text-6xl">R10K</h2>
                                     <p className="text-sm mt-[-0.5rem]">Total monthly running costs</p>
                                 </div>
                                 <p className="hidden md:block text-sm">Click here</p>
@@ -75,7 +75,7 @@ const Home = () => {
                         <Link to='/' className="border-[1px] hover:border-[var(--green)] ease-in-out duration-300 rounded-lg w-[49%] py-2 px-4 h-[90px]">
                             <div className="h-[100%] w-[100%] flex flex-col gap-2 lg:gap-2 justify-between">
                                 <div className="flex flex-col gap-0">
-                                    <h2 className="font-bold text-2xl lg:text-6xl text-[var(--red)]">28</h2>
+                                    <h2 className="font-bold text-2xl lg:text-6xl">28</h2>
                                     <p className="text-sm mt-[-0.5rem]">Issues reported in support</p>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@ const Home = () => {
                         <Link to='/' className="border-[1px] hover:border-[var(--green)] ease-in-out duration-300 rounded-lg w-[49%] py-2 px-4 h-[90px]">
                             <div className="h-[100%] w-[100%] flex flex-col gap-2 lg:gap-2 justify-between">
                                 <div className="flex flex-col gap-0">
-                                    <h2 className="font-bold text-2xl lg:text-6xl text-[var(--green)]">25</h2>
+                                    <h2 className="font-bold text-2xl lg:text-6xl">25</h2>
                                     <p className="text-sm mt-[-0.5rem]">New customers</p>
                                 </div>
                             </div>
