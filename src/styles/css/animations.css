@@ -1,0 +1,29 @@
+.popin {
+    animation-name: popin;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-duration: 0.3s;
+}
+
+@keyframes popin {
+    0% {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+.shine {
+    background: linear-gradient(120deg, var(--gray) 8%, var(--yellow-shine) 18%, var(--gray) 33%);
+    background-size: 200% 100%;
+    animation: 2.5s shine linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}

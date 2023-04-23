@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400&display=swap');
+
+:root {
+    --font: 'Montserrat', sans-serif;
+    --fs-base: 16px;
+    --fs-input: 1.2rem;
+
+    --w100: 100;
+    --w300: 300;
+    --w400: 400;
+    --w500: 500;
+    --w600: 600;
+    --w700: 700;
+    --w800: 800;
+    --w900: 900;
+
+    --white: #ffffff;
+    --off-white: #e1e1e1;
+    --black: #010001;
+    --black-light: #2e2e2e;
+    --gray: #f4f4f4;
+    --gray-dark: #3d434f;
+    --blue: #e1eaf8;
+    --green: #24ac46;
+    --yellow: #f0e214;
+    --yellow-hover: rgb(240, 226, 20, 0.7);
+    --yellow-shine: rgb(36, 172, 70, 0.2);
+    --red: #ff3f3f;
+
+    --border-radius: 0.7rem;
+    --btn-radius: 4rem;
+    --base-transition: 0.3s all;
+    --theme-transition: 0.25s all;
+}
+
+html {
+    font-size: var(--fs-base);
+    font-family: var(--font);
+    color: var(--black);
+    font-weight: var(--w400);
+
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: var(--base-transition);
+}
+
+body {
+    background-color: var(--black-light);
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--red);
+    transition: var(--base-transition);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+p,
+li {
+    font-size: 1rem;
+    margin: 0;
+}
+
+ul {
+    padding-inline: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+}
