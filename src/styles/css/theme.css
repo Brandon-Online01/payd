@@ -23,7 +23,7 @@
     --black: #010001;
     --black-light: #2e2e2e;
     --gray: #f4f4f4;
-    --gray-dark: #3d434f;
+    --gray-dark: rgb(61, 67, 79, 0.8);
     --blue: #e1eaf8;
     --green: #24ac46;
     --yellow: #f0e214;

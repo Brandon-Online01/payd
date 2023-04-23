@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
 
 //images
 import user from '../../assets/icons/user.svg'
@@ -13,14 +14,17 @@ import gear from '../..//assets/icons/gear.svg'
 import { usePathname } from "../../hooks/usePathName"
 
 export const Navbar = () => {
-    // user path name for active states 
+    const [isOpen, setIsOpen] = useState()
+
     const pathName = usePathname();
 
-    const openModal = () => { }
+    const openModal = () => {
+        setIsOpen(!isOpen)
+    }
 
     return (
         <>
-            <div className="flex flex-col justify-between h-[100%] w-[100%]">
+            <div className="flex flex-col justify-between h-[100%] w-[100%] relative">
                 <div className="flex flex-col gap-10 w-[100%]">
                     <Link to='/profile' className="group relative flex justify-center w-[100%]">
                         <img src={user} loading='lazy' alt='icon' className={`max-w-[50px] outline-none hover:scale-110 ease-in-out duration-300 xl:border-[1px] rounded-full p-2`} />
@@ -66,8 +70,14 @@ export const Navbar = () => {
                 </div>
                 <button className="group relative ease-in-out duration-300 rounded-md w-[100%] flex justify-center py-2 px-4" onClick={openModal}>
                     <img src={logout} loading='lazy' alt='icon' className="max-w-[30px] outline-none hover:scale-110 ease-in-out duration-300" />
-                    <div className="opacity-0 group-hover:opacity-100 ease-in-out duration-300 absolute top-[5px] left-[4rem] bg-[var(--yellow)] p-2 rounded-md w-[100px] py-2 flex justify-center">
-                        <span className="text-[var(--white)] text-sm">Logout</span>
+                    <div className="opacity-0 group-hover:opacity-100 ease-in-out duration-300 absolute top-[-6rem] left-[4.5rem] bg-[var(--white)] p-2 rounded-md w-[300px] py-2 flex justify-center shadow-2xl">
+                        <div className="w-[300px] p-4 rounded-lg flex flex-col gap-4">
+                            <p className="text-lg">Logging out, are you sure ?</p>
+                            <div className="flex items-center justify-between">
+                                <button className="border-[1px] border-[var(--red)] text-[var(--red)] hover:bg-[var(--red)] hover:text-[var(--white)] rounded-md py-2 w-[45%] cursor-pointer ease-in-out duration-300">Cancel</button>
+                                <button className="border-[1px] border-[var(--green)] text-[var(--green)] hover:bg-[var(--green)] hover:text-[var(--white)] rounded-md py-2 w-[45%] cursor-pointer ease-in-out duration-300">Yes</button>
+                            </div>
+                        </div>
                     </div>
                 </button>
             </div>

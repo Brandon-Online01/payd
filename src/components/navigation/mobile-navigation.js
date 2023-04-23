@@ -14,9 +14,15 @@ import gear from '../..//assets/icons/gear.svg'
 
 const MobileNavigation = () => {
     const [isOpen, setIsOpen] = useState('')
+    const [isLogginOut, setIsLogginOut] = useState('')
 
     const openMenu = () => {
         setIsOpen(!isOpen)
+    }
+
+    const openModal = () => {
+        setIsLogginOut(!isLogginOut)
+        console.log(isLogginOut)
     }
 
     return (
@@ -37,7 +43,7 @@ const MobileNavigation = () => {
                 </div>
                 {
                     isOpen && (
-                        <div className="w-[100%] min-h-[75vh] h-[100%] pt-8 pb-6 px-4 border-[1px] rounded-md flex flex-col items-start justify-between bg-[var(--green)] z-[2] popin">
+                        <div className="w-[100%] min-h-[75vh] overflow-scroll h-[100%] pt-8 pb-6 px-4 border-[1px] rounded-md flex flex-col items-start justify-between bg-[var(--green)] z-[2] popin relative">
                             <div className="flex flex-col gap-6 justify-between w-[100%]">
                                 <div className="flex flex-col items-start gap-6 text-[var(--white)] flex-wrap w-[100%]">
                                     <Link to='/' className='flex justify-start items-center gap-2'>
@@ -62,16 +68,26 @@ const MobileNavigation = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="flex items-center justify-between w-[100%]">
+                            <div className="flex items-center justify-between w-[100%] relative" onClick={openModal}>
                                 <div className="flex items-center gap-2">
                                     <img src={logout} loading='lazy' alt='icon' className="max-w-[30px] outline-none hover:scale-110 ease-in-out duration-300" />
-                                    <span className="text-[var(--white)] text-sm">Login</span>
+                                    <span className="text-[var(--white)] text-sm">Logout</span>
                                 </div>
+                                {
+                                    isLogginOut &&
+                                    <div className="rounded-lg flex flex-col gap-4 absolute top-[-5rem] right-0 border-[1px] bg-[var(--white)] p-4 w-[100%]">
+                                        <p className="text-lg">Logging out, are you sure ?</p>
+                                        <div className="flex items-center justify-between">
+                                            <button className="border-[1px] border-[var(--red)] text-[var(--red)] hover:bg-[var(--red)] hover:text-[var(--white)] rounded-md py-2 w-[45%] cursor-pointer ease-in-out duration-300">Cancel</button>
+                                            <button className="border-[1px] border-[var(--green)] text-[var(--green)] hover:bg-[var(--green)] hover:text-[var(--white)] rounded-md py-2 w-[45%] cursor-pointer ease-in-out duration-300">Yes</button>
+                                        </div>
+                                    </div>
+                                }
                             </div>
                         </div>
                     )
                 }
-            </div>
+            </div >
         </>
     )
 }
