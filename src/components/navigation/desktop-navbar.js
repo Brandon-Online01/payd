@@ -49,7 +49,15 @@ export const Navbar = () => {
                             </div>
                         </Link>
                         <Link to='/notifications' className={`group relative bg-[${pathName === '/notifications' ? 'var(--yellow)' : ''}] hover:bg-[var(--yellow-hover)] ease-in-out duration-300 rounded-md w-[100%] flex justify-center py-2 px-4`}>
-                            <img src={notifications} loading='lazy' alt='icon' className="max-w-[30px] outline-none hover:scale-110 ease-in-out duration-300" />
+                            <div className="relative flex items-start">
+                                <img src={notifications} loading='lazy' alt='icon' className="max-w-[30px] outline-none hover:scale-110 ease-in-out duration-300" />
+                                <div className="absolute right-[1px] top-[-0.1rem]">
+                                    <span class="relative h-4 w-4 flex items-center justify-center">
+                                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--red)] opacity-90"></span>
+                                        <span class="relative inline-flex rounded-full h-2 w-2 bg-[var(--red)]"></span>
+                                    </span>
+                                </div>
+                            </div>
                             <div className="opacity-0 group-hover:opacity-100 ease-in-out duration-300 absolute top-[5px] left-[4rem] bg-[var(--yellow)] p-2 rounded-md w-[100px] py-2 flex justify-center">
                                 <span className="text-[var(--white)] text-sm">Notifications</span>
                             </div>
