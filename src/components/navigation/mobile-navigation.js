@@ -55,7 +55,15 @@ const MobileNavigation = () => {
                                         <span className="text-[var(--white)] text-sm">Wallet</span>
                                     </Link>
                                     <Link to='/notifications' className='flex justify-start items-center gap-2'>
-                                        <img src={notifications} loading='lazy' alt='icon' className="max-w-[30px] outline-none hover:scale-110 ease-in-out duration-300" />
+                                        <div className="relative flex items-start">
+                                            <img src={notifications} loading='lazy' alt='icon' className="max-w-[30px] outline-none hover:scale-110 ease-in-out duration-300" />
+                                            <div className="absolute right-[1px] top-[-0.1rem]">
+                                                <span class="relative h-4 w-4 flex items-center justify-center">
+                                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--red)] opacity-90"></span>
+                                                    <span class="relative inline-flex rounded-full h-2 w-2 bg-[var(--red)]"></span>
+                                                </span>
+                                            </div>
+                                        </div>
                                         <span className="text-[var(--white)] text-sm">Notifications</span>
                                     </Link>
                                     <Link to='/support' className='flex justify-start items-center gap-2'>
